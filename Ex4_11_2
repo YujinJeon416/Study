@@ -1,0 +1,19 @@
+//중첩for문 ->별찍기
+class Ex4_11_2 {
+	public static void main(String[] args) { 
+
+		for(int i=1;i<=10;i++) { //세로
+			for(int j=1;j<=10;j++) { //10=상수(리터럴) 가로
+				System.out.print("*");
+			}
+			System.out.println(); //줄바꿈
+		}
+		
+		for(int i=1;i<=10;i++) { //세로
+			for(int j=1;j<=i;j++) { //가로
+				System.out.print("*");
+			}
+			System.out.println(); //줄바꿈
+		}
+	} // main의 끝
+}
