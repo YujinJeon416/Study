@@ -1,0 +1,93 @@
+import java.util.Arrays;
+
+class Ex5_1 {
+	public static void main(String[] args) {
+//		int[] score; // 1. 배열 score를 선언(참조변수)
+//		score = new int[5]; //2. 배열의 생성(int 저장공간 x5)
+		
+//		int[] score = new int[5]; //배열의 선언과 생성을 동시에
+//		score[3] = 100;
+//		
+//		System.out.println("score[0]=" + score[0]);
+//		System.out.println("score[1]=" + score[1]);
+//		System.out.println("score[2]=" + score[2]);
+//		System.out.println("score[3]=" + score[3]);
+//		System.out.println("score[4]=" + score[4]);
+//	
+//		int value = 100;
+//		System.out.println("value=" + value);
+//	
+		//index범위 : 0~9
+		int[] arr = new int[7]; //길이가 5인 int배열 arrd을 생성
+		System.out.println("arr.length=" + arr.length);
+		
+		for(int i=0;i<arr.length;i++) { //index범위를 벗어나서 에러
+			System.out.println("arr["+i+"]="+arr[i]);
+		System.out.println(arr[i]);
+		}
+		
+		System.out.println(Arrays.toString(arr));
+		
+		int[] iArr1 = new int[10];
+		int[] iArr2 = new int[10];
+//		int[] iArr3 = new int[]{100, 95, 80, 70, 60};
+		int[] iArr3 = {100, 95, 80, 70, 60};
+		char[] chArr = {'a', 'b', 'c', 'd'};
+
+		for (int i=0; i < iArr1.length ; i++ ) {
+			iArr1[i] = i + 1; // 1~10의 숫자를 순서대로 배열에 넣는다.
+		}
+
+		for (int i=0; i < iArr2.length ; i++ ) {
+			iArr2[i] = (int)(Math.random()*10) + 1; // 1~10의 값을 배열에 저장
+		}
+
+		// 배열에 저장된 값들을 출력한다.
+		for(int i=0; i < iArr1.length;i++) {
+			System.out.print(iArr1[i]+",");	
+		}
+		System.out.println();
+
+		System.out.println(Arrays.toString(iArr2));
+		System.out.println(Arrays.toString(iArr3));
+		System.out.println(Arrays.toString(chArr));
+		System.out.println(iArr3);
+		System.out.println(chArr);
+		
+		//index: 0~3-1,0~2 
+		String[] strArr = {"가위", "바위", "보"};
+		System.out.println(Arrays.toString(strArr));
+		
+		for(int i=0;i<10;i++) {
+			int tmp = (int)(Math.random()*3);
+			System.out.println(strArr[tmp]); //0~2
+		}
+		
+		//012345
+		String str = "ABCDE"; // str.length()는 5
+		char ch = str.charAt(4);
+		String str2 = str.substring(1,4);//BCD
+		String str3 = str.substring(1);//1~4
+		String str4 = str.substring(1,str.length());//1~4
+		System.out.println(str4); // BCD
+		
+		int[] arr1 = {3,4,1,0,2}; //1차원 배열 arr
+		System.out.println(Arrays.toString(arr1));
+		Arrays.sort(arr); //배열 arr을 오름차순으로 정렬
+		System.out.println(Arrays.toString(arr1));
+		
+		int[][] arr2D = {{11,12},{21,22}}; //2차원 배열
+		
+		System.out.println(Arrays.toString(arr1));
+		System.out.println(Arrays.deepToString(arr2D));
+		
+		String[][] str2D = {{"aaa", "bbb"},{"AAA", "BBB"}};
+		String[][] str2D2 = {{"aaa", "bbb"},{"AAA", "BBB"}};
+		
+		System.out.println(Arrays.deepEquals(str2D, str2D2));
+		
+		int[] arr2 = Arrays.copyOfRange(arr1, 2, 4);
+		System.out.println(Arrays.toString(arr2));
+	}
+
+	}
