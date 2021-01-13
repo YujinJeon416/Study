@@ -1,4 +1,5 @@
 class Ex6_3 {
+//클래스변수와 인스턴스변수(카드로설명)
 	public static void main(String args[]) {
 		System.out.println("Card.width = " + Card.width); //Card.width=cv
 		System.out.println("Card.height = " + Card.height); //Card.width=cv
