@@ -1,0 +1,22 @@
+
+public class VarEx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 4, y = 2;
+		//변수로 설정해두면 숫자를 일일히 바꾸지 않아도 되어서 편하다!
+		int tmp;
+		
+		tmp = x;
+		x = y;
+		y = tmp;
+		
+		System.out.println("x="+x);//x=2
+		System.out.println("y="+y); //y=4
+		System.out.println(x+y); //덧셈 6
+		System.out.println(x-y); //뺄셈-2
+		System.out.println(x*y); //곱셈 8
+		System.out.println(x/y); //나눗셈 0
+	}
+
+}
