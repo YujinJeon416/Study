@@ -14,3 +14,5 @@ class Ex3_2 {
 		System.out.println("j=++i; 실행 후, i=" + i +", j="+ j); //j=++i; 실행 후, i=6, j=6
 	}
 }
+
+
