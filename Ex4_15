@@ -22,3 +22,6 @@ class Ex4_15 {
 		System.out.println("정답입니다.");
 	}
 }
+
+
+
