@@ -50,3 +50,8 @@ class Ex4_20 {
 		System.out.println("프로그램이 종료되었습니다.");
 	} // main의 끝
 }
+
+
+
+
+
