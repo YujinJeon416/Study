@@ -9,3 +9,5 @@ class Ex3_4 {
 		System.out.println(i);  //10
 	}
 }
+
+
