@@ -6,3 +6,6 @@ class Ex3_5 {
 		System.out.println("d=" + d);  //d=85.4
 	}
 }
+
+
+
