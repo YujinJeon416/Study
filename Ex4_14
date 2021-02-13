@@ -14,3 +14,6 @@ class Ex4_14 {
 
 			num /= 10;   // num = num / 10;  num
 		}
+
+
+
