@@ -28,3 +28,6 @@ System.out.println(Arrays.toString(ball));
 			System.out.printf("ball[%d]=%d%n", i, ball[i]); 
 	} 
 }
+
+
+
