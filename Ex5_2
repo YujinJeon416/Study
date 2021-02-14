@@ -20,3 +20,6 @@ class Ex5_2 {
 		System.out.println("평균: " + average);
 	}
 }
+
+
+
