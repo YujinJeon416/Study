@@ -19,3 +19,6 @@ class Ex5_8 {
 		System.out.println("sum=" + sum);
 	}
 }
+
+
+
